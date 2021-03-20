@@ -12,11 +12,11 @@ void countPeaks()
     for (int i = 0; i < N; i++)
         cin >> arr[i];
 
-    int ans = 0;
+    int count = 0;
     for (int i = 1; i < N - 1; i++)
         if (arr[i] > arr[i-1] && arr[i] > arr[i+1])
-            ans++;
-    cout << ans << "\n";
+            count++;
+    cout << count << "\n";
 }
 
 int main()
